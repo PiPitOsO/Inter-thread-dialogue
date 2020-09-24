@@ -17,14 +17,14 @@ public class Main {
         thread4.start();
 
         try {
-                Thread.sleep(15000);
+            Thread.sleep(15000);
             thread1.interrupt();
             thread2.interrupt();
             thread3.interrupt();
             thread4.interrupt();
         } catch (InterruptedException err) {
 
-        } finally{
+        } finally {
             System.out.printf("Завершаю все потоки.");
         }
     }
